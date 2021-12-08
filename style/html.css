@@ -352,11 +352,54 @@ template {
     display: inline-block;
     background: red;
     resize: both;
-    overflow: hidden;
+    overflow: clip;
     line-height: 0;
     }
   
 .resizable img {
-    width: 100%;
+    width: fit-content;
     height: 100%;
+    max-width:400px;
+    max-height:400px;
+    border: 2px solid black;
+  }
+
+table, th, td {
+  border: 1px solid black;
+}
+
+@font-face {
+  font-family: "impact";
+  src: url("static/fonts/unicode.impact.ttf");
+}
+
+@font-face {
+  font-family: "comic sans";
+  src: url("static/fonts/design.graffiti.comicsansmsgras.ttf");
+}
+
+@font-face {
+  font-family: "arial.bold";
+  src: url("static/fonts/arial.bold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat.bold";
+  src: url("static/fonts/Montserrat-Bold.ttf");
+}
+
+.font1 {
+  font-family: 'impact';
+}
+
+.font2 {
+  font-family: 'comic sans';
+}
+
+.font3 {
+  font-family: 'arial.bold';
+}
+
+.font4 {
+  font-family: 'montserrat.bold';
 }
